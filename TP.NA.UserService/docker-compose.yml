@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tp.na.userservice.api:
+    image: ${DOCKER_REGISTRY-}tpnauserserviceapi
+    build:
+      context: .
+      dockerfile: src/TP.NA.UserService.Api/Dockerfile
